@@ -57,4 +57,4 @@ incremental update.
 
 ## License
 
-[Apache 2.0](LICENSE-APACHE.md) or [MIT](LICENSE-MIT.md), [at your option](LICENSE.md).
+Dual license: [AGPL](LICENCE.txt), or contact us for proprietary offerings: andres@nodeffect.com
