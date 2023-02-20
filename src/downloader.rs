@@ -63,6 +63,7 @@ impl RoutingMessageHandler for GossipRouter {
 		{
 			let mut counter = self.counter.write().unwrap();
 			output_value = native_result.map_err(|error| {
+				eprintln!("Error happened on handle_channel_announcement:{}", error.err);
 				if error.err.contains("didn't match on-chain script") {
 					counter.channel_announcements_with_mismatched_scripts += 1;
 				}
